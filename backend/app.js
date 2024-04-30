@@ -9,7 +9,7 @@ const usersRouter = require('./routes/users');
 const todosRouter = require('./routes/todos');
 
 const dataBase = require('./services/database');
-const todos = require('./services/todos');
+const todos = require('./repositories/todos');
 
 const app = express();
 
