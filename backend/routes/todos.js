@@ -28,4 +28,6 @@ router.post('/', async (req, res) => {
   }
 });
 
+    console.log(123)
+
 module.exports = router;
