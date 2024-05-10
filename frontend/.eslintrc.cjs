@@ -14,5 +14,19 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    '@typescript-eslint/no-unused-vars': 'warn',
+    'no-console': [
+      'warn',
+      { 'allow': ['error'] },
+    ],
+    '@typescript-eslint/ban-ts-comment': [
+      'error',
+      {
+        'ts-ignore': false,
+      },
+    ],
+    'react-hooks/exhaustive-deps': 'warn',
+    'no-empty-pattern': 'warn',
+
   },
-}
+};
