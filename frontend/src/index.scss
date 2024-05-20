@@ -1,0 +1,16 @@
+
+#root {
+  //--scrollbar-color-track: #111827;
+  //--scrollbar-color-thumb: #374151;
+  //
+  //scrollbar-color: var(--joy-palette-neutral-300, #CDD7E1) var(--scrollbar-color-track);
+
+  height: 100vh;
+  //background-color: white;
+  color-scheme: light !important;
+
+
+  [data-joy-color-scheme="light"] {
+    color-scheme: light !important;
+  }
+}

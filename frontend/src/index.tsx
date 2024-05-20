@@ -1,4 +1,7 @@
 import ReactDOM from 'react-dom/client';
+
+import { CssVarsProvider } from '@mui/joy';
+import CssBaseline from '@mui/joy/CssBaseline';
 // import { Provider } from 'react-redux';
 // import {Provider} from "react-redux";
 //
@@ -7,11 +10,13 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 
 import 'normalize.css';
-// import './index.scss';
+import './index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-        // <Provider store={store}>
-    <><App /></>
-
-        // </Provider>
+  <>
+    <CssVarsProvider>
+      <CssBaseline />
+      <App />
+    </CssVarsProvider>
+  </>
 );
