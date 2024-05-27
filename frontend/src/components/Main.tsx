@@ -2,17 +2,35 @@ import { Box, Grid } from '@mui/joy';
 
 const Main = () => {
   return (
-    <Box>
-      <Box>Header</Box>
-      <Grid
+    <Box sx={{ backgroundColor: '#d0d0d0', height: '100%' }}>
+      <Box
         sx={{
-          height: '100vh',
           width: '100%',
-          // backgroundColor: 'var(--joy-palette-neutral-200, #DDE7EE)',
+          height: '40px',
+          backgroundColor: 'primary.400',
+        }}
+      ></Box>
+      <Grid
+        container
+        sx={{
+          height: 'calc(100% - 40px)',
         }}
       >
-        <Grid></Grid>
-        <Grid></Grid>
+        <Grid xs={3}>
+          <Box sx={{ backgroundColor: '#f0f0f0', height: '100%' }}>
+            Column 1
+          </Box>
+        </Grid>
+        <Grid
+          xs={9}
+          sx={{
+            height: '100%',
+          }}
+        >
+          <Box sx={{ backgroundColor: '#d0d0d0', height: '100%' }}>
+            Column 2
+          </Box>
+        </Grid>
       </Grid>
     </Box>
   );
