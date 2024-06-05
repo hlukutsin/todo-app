@@ -1,5 +1,7 @@
 import { Box, Grid } from '@mui/joy';
 
+import TodosList from './TodosList.tsx';
+
 const Main = () => {
   return (
     <Box sx={{ backgroundColor: '#d0d0d0', height: '100%' }}>
@@ -16,20 +18,21 @@ const Main = () => {
           height: 'calc(100% - 40px)',
         }}
       >
-        <Grid xs={3}>
-          <Box sx={{ backgroundColor: '#f0f0f0', height: '100%' }}>
-            Column 1
-          </Box>
+        <Grid xs={4}>
+          <TodosList />
         </Grid>
         <Grid
-          xs={9}
+          xs={8}
           sx={{
             height: '100%',
           }}
         >
-          <Box sx={{ backgroundColor: '#d0d0d0', height: '100%' }}>
-            Column 2
-          </Box>
+          <Box
+            sx={{
+              backgroundColor: '#f0f0f0',
+              height: '100%',
+            }}
+          ></Box>
         </Grid>
       </Grid>
     </Box>
