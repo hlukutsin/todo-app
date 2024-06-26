@@ -9,7 +9,7 @@ class Database {
 
   connectToBase = async () => {
     try {
-      const client = await MongoClient.connect(dburl);
+      const client = await MongoClient.connect('mongodb://mongo:27017', { useNewUrlParser: true, useUnifiedTopology: true });
       this.db = client.db('todos');
       console.log('Connected to MongoDB');
     } catch (err) {
